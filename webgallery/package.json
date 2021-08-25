@@ -1,0 +1,27 @@
+{
+  "name": "webgallery",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "npm-run-all -p nodemon browser-sync",
+    "nodemon": "nodemon ./app.js",
+    "browser-sync": "browser-sync start -p \"localhost:3000\" --ss \"frontend\" -w \"frontend\" --no-open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nakamin/webgallery.git"
+  },
+  "author": "Anton Kaminsky",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^3.0.8",
+    "body-parser": "^1.19.0",
+    "cookie": "^0.4.0",
+    "express": "^4.17.1",
+    "express-session": "^1.17.0",
+    "multer": "^1.4.2",
+    "nedb": "^1.8.0"
+  },
+  "devDependencies": {
+    "npm-run-all": "^4.1.5"
+  }
+}

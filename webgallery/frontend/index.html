@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>C09GAG</title>
+        <link rel="stylesheet" href="style/main.css" />
+        <link rel="stylesheet" href="style/theme.css" />
+    </head>
+
+    <body>
+        <header>
+            <div id="logo">
+                <div id="logo_img"></div>
+                <h1>C09GAG</h1>
+            </div>
+            <button id="signup" class="btn">
+                <a href="/signup.html">Sign up</a>
+                <i class="fas fa-sign-out-alt"></i>
+            </button>
+        </header>
+
+        <p id="error_box"></p>
+
+        <form id="signin" class="hidden" method="POST" action="/api/signin">
+            <input
+                type="text"
+                name="username"
+                class="form_element"
+                placeholder="Enter a username"
+                required
+            />
+            <input
+                type="password"
+                name="password"
+                class="form_element"
+                placeholder="Enter a password"
+                required
+            />
+            <button type="submit" class="btn">Sign In</button>
+        </form>
+        <ul id="userlist" class="hidden"></ul>
+        <script
+            src="https://kit.fontawesome.com/1c43c6cf76.js"
+            crossorigin="anonymous"
+        ></script>
+        <script src="js/api.js"></script>
+        <script src="js/index_view.js"></script>
+        <script src="js/index_controller.js"></script>
+    </body>
+</html>

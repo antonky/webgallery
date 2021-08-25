@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>C09GAG</title>
+        <link rel="stylesheet" href="style/main.css" />
+        <link rel="stylesheet" href="style/theme.css" />
+    </head>
+
+    <body>
+        <!-- static -->
+        <header>
+            <div id="logo">
+                <div id="logo_img"></div>
+                <h1>C09GAG</h1>
+            </div>
+            <div id="buttons">
+                <button id="sign_out" class="btn">
+                    <a href="/api/signout">Sign out</a>
+                    <i class="fas fa-sign-out-alt"></i>
+                </button>
+                <button id="sign_out" class="btn">
+                    <a href="/">Choose gallery</a>
+                    <i class="fas fa-images"></i>
+                </button>
+                <button id="submit_post" class="btn">
+                    Add image
+                    <i class="fas fa-cloud-upload-alt"></i>
+                </button>
+            </div>
+        </header>
+
+        <!-- modal -->
+        <div id="submit_modal">
+            <form action="submit" id="image_add_form">
+                <div class="form_header">
+                    <h1>Submit an image</h1>
+                    <i class="fas fa-times-circle" id="close_modal"></i>
+                </div>
+
+                <div class="submit_controls">
+                    <input
+                        type="text"
+                        id="title_input"
+                        class="input"
+                        placeholder="Image title"
+                        required
+                    />
+                    <button class="btn">Post</button>
+                </div>
+                <input
+                    type="file"
+                    name="image"
+                    id="image_choose_file"
+                    class=""
+                />
+            </form>
+        </div>
+
+        <main>
+            <p id="error_box"></p>
+            <!-- dynamic image card with paging -->
+            <div id="image_root"></div>
+
+            <form action="submit" id="comment_form">
+                <textarea
+                    name="comment"
+                    id="comment_text"
+                    rows="2"
+                    placeholder="Write a comment"
+                    required
+                ></textarea>
+                <div id="text_area_controls">
+                    <button class="btn" id="post_comment">Post</button>
+                </div>
+            </form>
+
+            <!-- dynamic comments with paging -->
+            <div id="comment_root" class="comments"></div>
+        </main>
+        <footer>
+            <a href="/credits.html">credits</a>
+        </footer>
+        <script src="js/api.js"></script>
+        <script src="js/controller.js"></script>
+        <script src="js/view.js"></script>
+        <script
+            src="https://kit.fontawesome.com/1c43c6cf76.js"
+            crossorigin="anonymous"
+        ></script>
+    </body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>C09GAG</title>
+        <link rel="stylesheet" href="style/main.css" />
+        <link rel="stylesheet" href="style/theme.css" />
+    </head>
+
+    <body>
+        <header>
+            <div id="logo">
+                <div id="logo_img"></div>
+                <h1>C09GAG</h1>
+            </div>
+        </header>
+
+        <form action="/api/signup/" method="POST">
+            <input
+                type="text"
+                name="username"
+                class="form_element"
+                placeholder="Enter a username"
+                required
+            />
+            <input
+                type="password"
+                name="password"
+                class="form_element"
+                placeholder="Enter a password"
+                required
+            />
+            <button type="submit" class="btn">Sign Up</button>
+        </form>
+
+        <footer>
+            <a href="/credits.html">credits</a>
+        </footer>
+    </body>
+</html>

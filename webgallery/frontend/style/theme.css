@@ -1,0 +1,30 @@
+.btn {
+  margin: 10px;
+  padding: 10px;
+  border: none;
+  display: flex;
+  align-items: center;
+  background-color: #00e676;
+  color: #1c573a;
+  font-weight: 700;
+  font-size: 16px;
+}
+.btn > i {
+  margin: 5px;
+}
+input {
+  padding: 5px;
+  border: none;
+  background-color: #2c2f34;
+  border: 2px solid #999999;
+  color: white;
+}
+.input::placeholder {
+  color: lightgray;
+  font-weight: 500;
+}
+h1 {
+  color: lightgray;
+  font-size: 18px;
+  font-weight: 700;
+}

@@ -1,0 +1,226 @@
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-size: 100%;
+    font: inherit;
+    font-family: Open Sans, Helvetica Neue LT, Helvetica Neue, -apple-system,
+        BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif;
+}
+
+#error_box {
+    color: red;
+    visibility: hidden;
+}
+
+.hidden {
+    visibility: collapse;
+    position: absolute;
+}
+
+#buttons {
+    display: flex;
+}
+
+li > a {
+    color: white;
+}
+
+/* header */
+body {
+    background-color: #794bc4;
+    padding-bottom: 40px;
+}
+header {
+    width: 100%;
+    background-color: #4f0299;
+    color: whitesmoke;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#logo {
+    margin: 10px;
+    margin-left: 30px;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 700;
+}
+#logo_img {
+    background-image: url(../favicon.ico);
+    background-repeat: no-repeat;
+    background-size: 30px 30px;
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+}
+
+/* modal */
+/* got this from w3schools https://www.w3schools.com/howto/howto_css_modals.asp */
+#submit_modal {
+    display: none;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+.submit_controls {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#image_add_form {
+    background-color: #2c2f34;
+    padding: 15px;
+}
+#poster_input {
+    margin-left: 5px;
+}
+.form_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#close_modal {
+    padding: 5px;
+    color: lightgrey;
+}
+#image_choose_file {
+    color: lightgray;
+}
+
+/* content */
+main {
+    width: 800px;
+    margin: auto;
+    margin-top: 10px;
+}
+#empty_message {
+    font-size: 50px;
+}
+
+/* image area*/
+.image_card {
+    background-color: #2c2f34;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-radius: 5px;
+}
+.image_info {
+    display: flex;
+    padding: 20px;
+}
+.text_info {
+    color: whitesmoke;
+    margin-left: 7px;
+}
+#title {
+    font-size: 18px;
+    font-weight: 400;
+}
+#author {
+    font-weight: 700;
+    font-size: 12px;
+    color: #bbb;
+}
+#main_image {
+    width: 100%;
+}
+.image_controls {
+    color: lightgrey;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    font-size: 18px;
+}
+.paginate_image {
+    display: flex;
+    align-items: center;
+}
+.page_info {
+    margin: 8px;
+    font-weight: 700;
+}
+.delete_image:hover {
+    background-color: red;
+    color: white;
+}
+
+/* comments area */
+#comment_form {
+    display: none;
+    border: 2px solid #999999;
+    padding: 8px;
+    border-radius: 5px;
+    background-color: #2c2f34;
+    margin-bottom: 10px;
+}
+#comment_text {
+    border: none;
+    background-color: #2c2f34;
+    width: 100%;
+    resize: none;
+    overflow-y: hidden;
+    color: white;
+    padding: 8px;
+}
+#comment_text::placeholder {
+    color: lightgray;
+    font-weight: 500;
+}
+#text_area_controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.comment {
+    background-color: #2c2f34;
+    color: white;
+    padding: 5px;
+    border-bottom: 1px solid #999999;
+}
+.comment_header {
+    display: flex;
+    justify-content: space-between;
+    color: lightgrey;
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+.comment_info {
+    display: flex;
+    justify-content: space-between;
+}
+.delete_comment {
+    font-size: 16px;
+}
+.delete_comment:hover {
+    color: red;
+}
+.comment_separate {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.comment_footer {
+    background-color: #2c2f34;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: lightgray;
+}
+.paginate_comments {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
