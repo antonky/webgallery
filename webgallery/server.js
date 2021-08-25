@@ -360,7 +360,7 @@ app.get("/api/users", isAuthenticated, (req, res) => {
 app.use(express.static("frontend"));
 
 const http = require("http");
-const PORT = 3050;
+const PORT = process.env.PORT || 8080;
 
 http.createServer(app).listen(PORT, err => {
     if (err) console.log(err);

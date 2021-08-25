@@ -1,9 +1,12 @@
 {
+  "engines": {
+    "node": "14.x"
+  },
   "name": "webgallery",
   "version": "1.0.0",
   "scripts": {
     "dev": "npm-run-all -p nodemon browser-sync",
-    "nodemon": "nodemon ./app.js",
+    "nodemon": "nodemon ./server.js",
     "browser-sync": "browser-sync start -p \"localhost:3000\" --ss \"frontend\" -w \"frontend\" --no-open"
   },
   "repository": {
